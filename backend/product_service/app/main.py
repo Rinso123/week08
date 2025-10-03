@@ -475,3 +475,4 @@ async def deduct_product_stock(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail="Could not deduct stock.",
         )
+# trigger CI/CD test
