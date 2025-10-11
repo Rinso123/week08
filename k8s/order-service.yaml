@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: order-service-container
-          image: rinsoacr123.azurecr.io/order_service:latest
+          image: rinsorincoacr.azurecr.io/order-service:v1.0.0
 
           imagePullPolicy: Always
           ports:

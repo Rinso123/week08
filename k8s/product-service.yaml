@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: product-service-container
-          image: rinsoacr123.azurecr.io/product_service:latest
+          image: rinsorincoacr.azurecr.io/product-service:v1.0.0
 
           imagePullPolicy: Always
           ports:
