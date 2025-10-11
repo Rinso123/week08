@@ -54,7 +54,7 @@ services:
     environment:
       POSTGRES_HOST: product_db # Connects to the 'product_db' service within Docker network
       AZURE_STORAGE_ACCOUNT_NAME: rinsorincoacct # Replace with your Azure Storage account name
-      AZURE_STORAGE_ACCOUNT_KEY: IZ0Uynssl2cFGyxdQ/rz52+Rzkv9MV/ozFi1q6g9s1loMOmLVPsrHRGgec5zeirMbyy3qFQZALHP+ASt5ZBUfA== # Replace with your Azure Storage account key
+      AZURE_STORAGE_ACCOUNT_KEY: ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }} # Replace with your Azure Storage account key
       AZURE_STORAGE_CONTAINER_NAME: rinsorincoacr # Replace with your Azure Storage container name
       AZURE_SAS_TOKEN_EXPIRY_HOURS: 24
     depends_on:
