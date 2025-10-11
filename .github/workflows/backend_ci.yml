@@ -18,7 +18,6 @@ on:
 
 # Define global environment variables that can be used across jobs
 env:
-  env:
   ACR_NAME: ${{ secrets.ACR_NAME }}
   ACR_LOGIN_SERVER: ${{ secrets.ACR_LOGIN_SERVER }}
   IMAGE_TAG: ${{ github.sha }}-${{ github.run_id }}
