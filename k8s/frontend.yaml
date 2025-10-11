@@ -16,6 +16,8 @@ spec:
       labels:
         app: frontend
     spec:
+      imagePullSecrets:
+        - name: acr-pull-secret
       containers:
         - name: frontend-container
           image: rinsorincoacr.azurecr.io/frontend:v1.0.0

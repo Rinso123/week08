@@ -16,6 +16,8 @@ spec:
       labels:
         app: order-service
     spec:
+      imagePullSecrets:
+        - name: acr-pull-secret
       containers:
         - name: order-service-container
           image: rinsorincoacr.azurecr.io/order-service:v1.0.0
